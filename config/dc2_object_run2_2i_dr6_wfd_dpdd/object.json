@@ -13,7 +13,7 @@
 {"name": "ra", "type": "DOUBLE NOT NULL"},
 {"name": "dec", "type": "DOUBLE NOT NULL"},
 {"name": "tract", "type": "BIGINT DEFAULT NULL"},
-{"name": "patch", "type": "CHAR DEFAULT NULL"},
+{"name": "patch", "type": "CHAR(3) DEFAULT NULL"},
 {"name": "x", "type": "DOUBLE DEFAULT NULL"},
 {"name": "y", "type": "DOUBLE DEFAULT NULL"},
 {"name": "xErr", "type": "FLOAT DEFAULT NULL"},
