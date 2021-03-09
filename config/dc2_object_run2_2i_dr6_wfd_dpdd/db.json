@@ -1,5 +1,5 @@
 {
-    "database":"dc2_object_run22i_dr6_wfd_dpdd_v2",
+    "database":"dc2_object_run22i_dr6_wfd_v2_00",
     "num_stripes": 340,
     "num_sub_stripes": 3,
     "overlap": 0.01667,
