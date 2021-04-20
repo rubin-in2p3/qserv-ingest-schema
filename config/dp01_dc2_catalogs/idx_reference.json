@@ -1,6 +1,6 @@
 {
     "database": "dp01_dc2_catalogs",
-    "table": "dpdd_ref",
+    "table": "reference",
     "index": "objectId_uniq",
     "spec": "DEFAULT",
     "comment": "None",

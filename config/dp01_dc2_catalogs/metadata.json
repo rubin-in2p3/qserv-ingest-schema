@@ -2949,8 +2949,8 @@
             ]
         },
         {
-            "schema": "dpdd_forced.json",
-            "indexes": [ "idx_dpdd_forced.json"] ,
+            "schema": "forced_photometry.json",
+            "indexes": [ "idx_forced_photometry.json"] ,
             "data": [
                 {
                     "directory": "step2_1/dpdd_forced",
@@ -5896,8 +5896,8 @@
             ]
         },
         {
-            "schema": "dpdd_ref.json",
-            "indexes": [ "idx_dpdd_ref.json"],
+            "schema": "reference.json",
+            "indexes": [ "idx_reference.json"],
             "data": [
                 {
                     "directory": "step2_1/dpdd_ref",
