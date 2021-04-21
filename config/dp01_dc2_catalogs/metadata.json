@@ -8844,6 +8844,7 @@
         },
         {
             "schema": "object.json",
+            "indexes": [],
             "data": [
                 {
                     "directory": "object/chunksSet1",
@@ -14319,6 +14320,7 @@
         },
         {
             "schema": "truth_match.json",
+            "indexes": [],
             "data": [
                 {
                     "directory": "truth_match/chunksSet1",
