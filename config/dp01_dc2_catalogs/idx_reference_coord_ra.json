@@ -3,7 +3,7 @@
     "table": "reference",
     "index": "idx_coord_ra",
     "spec": "DEFAULT",
-    "comment": "None",
+    "comment": "The index on the spatial coordinate ra",
     "columns": [
         {
             "column": "coord_ra",

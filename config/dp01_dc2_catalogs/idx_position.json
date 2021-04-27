@@ -3,7 +3,7 @@
     "table": "position",
     "index": "idx_objectId",
     "spec": "DEFAULT",
-    "comment": "None",
+    "comment": "The non-unique index on the FK key for the object identifiers in table object",
     "columns": [
         {
             "column": "objectId",

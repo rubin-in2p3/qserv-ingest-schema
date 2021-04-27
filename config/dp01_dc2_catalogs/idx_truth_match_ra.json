@@ -3,7 +3,7 @@
     "table": "truth_match",
     "index": "idx_ra",
     "spec": "DEFAULT",
-    "comment": "None",
+    "comment": "The index on the spatial coordinate ra",
     "columns": [
         {
             "column": "ra",

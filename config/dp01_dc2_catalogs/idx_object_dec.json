@@ -3,7 +3,7 @@
     "table": "object",
     "index": "idx_dec",
     "spec": "DEFAULT",
-    "comment": "None",
+    "comment": "The index on the spatial coordinate dec",
     "columns": [
         {
             "column": "dec",
