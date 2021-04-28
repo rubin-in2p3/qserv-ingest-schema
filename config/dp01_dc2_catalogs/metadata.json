@@ -3,7 +3,7 @@
     "tables": [
         {
             "schema": "position.json",
-            "indexes": [ "idx_position.json"],
+            "indexes": [ "idx_position.json", "idx_position_coord_ra.json", "idx_position_coord_dec.json"],
             "data": [
                 {
                     "directory": "step1_1/position",
@@ -2950,7 +2950,7 @@
         },
         {
             "schema": "forced_photometry.json",
-            "indexes": [ "idx_forced_photometry.json"] ,
+            "indexes": [ "idx_forced_photometry.json", "idx_forced_photometry_coord_ra.json", "idx_forced_photometry_coord_dec.json"] ,
             "data": [
                 {
                     "directory": "step2_1/dpdd_forced",
@@ -5897,7 +5897,7 @@
         },
         {
             "schema": "reference.json",
-            "indexes": [ "idx_reference.json"],
+            "indexes": [ "idx_reference.json", "idx_reference_coord_ra.json", "idx_reference_coord_dec.json"],
             "data": [
                 {
                     "directory": "step2_1/dpdd_ref",
@@ -8844,7 +8844,7 @@
         },
         {
             "schema": "object.json",
-            "indexes": [],
+            "indexes": ["idx_object.json", "idx_object_ra.json", "idx_object_dec.json"],
             "data": [
                 {
                     "directory": "object/chunksSet1",
@@ -14320,7 +14320,7 @@
         },
         {
             "schema": "truth_match.json",
-            "indexes": [],
+            "indexes": ["idx_truth_match.json", "idx_truth_match_ra.json", "idx_truth_match_dec.json"],
             "data": [
                 {
                     "directory": "truth_match/chunksSet1",

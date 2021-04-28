@@ -1,9 +1,9 @@
 {
     "database": "dp01_dc2_catalogs",
-    "table": "position",
+    "table": "object",
     "index": "idx_objectId",
-    "spec": "DEFAULT",
-    "comment": "The non-unique index on the FK key for the object identifiers in table object",
+    "spec": "UNIQUE",
+    "comment": "The unique index on the primary key for the object identifiers",
     "columns": [
         {
             "column": "objectId",
