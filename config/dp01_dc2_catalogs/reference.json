@@ -3,9 +3,7 @@
     "table": "reference",
     "auth_key": "",
     "is_partitioned": 1,
-    "chunk_id_key": "chunkId",
-    "sub_chunk_id_key": "subChunkId",
-    "is_director": 0,
+    "director_table": "object",
     "director_key": "objectId",
     "schema": [
         {
