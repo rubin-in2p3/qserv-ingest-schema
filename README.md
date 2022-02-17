@@ -8,3 +8,4 @@ There are only 4 relevant directories in /sps/lsst/groups/qserv/dataloader :
 - dc2_dr6_object_v2
 - dc2_object_run2_2i_dr6_wfd
 - dp01_dc2_catalogs
+- skysim5000_v1.1.1
