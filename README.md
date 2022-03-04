@@ -44,7 +44,7 @@ The repository structure is the following:
 │   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
-└── skysim5000_v1.1.1
+└── skysim5000_v1.1.1_parquet
     ├── CHANGELOG.md
     ├── v0
     └── v1
@@ -79,7 +79,7 @@ and copy all the json schema files to the corresponding directory on `/sps/lsst/
 If one or more catalog's schema need to be update, the following procedure must be followed: 
 
 1. create a new branch from the main, e.g. `git checkout -b skysim_v2`
-2. create the corresponding directory, e.g. `mkdir skysim5000_v1.1.1/v2`
+2. create the corresponding directory, e.g. `mkdir skysim5000_v1.1.1_parquet/v2`
 3. make the modification to the schema and commit/push it
 4. update the changelog  mentioning the changes and the compatibility with qserv ingest version, e.g. 
 
