@@ -21,32 +21,38 @@ The repository structure is the follow:
 ```
 ├── README.md
 ├── cosmoDC2_v1.1.4_image
-│   ├── Changelog.md
+│   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
 ├── dc2_object_run2_2i_dr6_wfd
-│   ├── Changelog.md
+│   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
 ├── dc2_object_run2_2i_dr6_wfd_dpdd
-│   ├── Changelog.md
+│   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
 ├── dp01_dc2_catalogs
-│   ├── Changelog.md
+│   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
 └── skysim5000_v1.1.1
-    ├── Changelog.md
+    ├── CHANGELOG.md
     ├── v0
     └── v1
 ```
+
 
 For each catalog different version of the schema are available and identified by directory v<x> (e.g. v0, v1): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
 
 We set the `v0` as the version used before qserv `2022-01-01.rc1` and `v1` the version used starting with qserv `2022-01-01.rc1`.
 
-For each catalog, the CHANGELOG return also the compatibility between the schema and qserv ingest. 
+For each catalog, the CHANGELOG return also the compatibility between the schema and qserv ingest, e.g. 
+
+| Schema Version | Qserv version   | Notes      |
+|----------------|-----------------|------------|
+| v0             | < 2022-01-01.rc1|            |
+| v1             | 2022-01-01.rc1  |            |
 
 ## Use the schema
 
