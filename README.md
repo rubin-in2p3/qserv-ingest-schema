@@ -4,19 +4,28 @@
 This repository contains schema configuration related to the qserv database instance at CC-IN2P3.
 
 
-There are 5 relevant catalogs available at CC-IN2P3 (under `/sps/lsst/groups/qserv/dataloader/stable`):
+There are 5 relevant catalogs available at CC-IN2P3 (under `/sps/lsst/groups/qserv/dataloader/stable`).
 
+Three have been ingested: 
+
+- dp01_dc2_catalogs
+- skysim5000_v1.1.1_parquet
 - cosmoDC2_v1.1.4_image
+
+
+The two following catalogs have not been ingested: 
+
 - dc2_dr6_object_v2
 - dc2_object_run2_2i_dr6_wfd
-- dp01_dc2_catalogs
-- skysim5000_v1.1.1
 
-The schema configurations  in this repository are covering these catalogs. 
+
+The schema configurations in this repository are covering the above catalogs. 
+
 
 ## Repository structure
 
 The repository structure is the following:
+
 
 ```
 ├── README.md
@@ -24,12 +33,11 @@ The repository structure is the following:
 │   ├── CHANGELOG.md
 │   ├── v0
 │   └── v1
+├── dc2_dr6_object_v2
+│   └── v0
 ├── dc2_object_run2_2i_dr6_wfd
 │   ├── CHANGELOG.md
-│   ├── v0
-│   └── v1
-├── dc2_object_run2_2i_dr6_wfd_dpdd
-│   ├── CHANGELOG.md
+│   ├── dpdd
 │   ├── v0
 │   └── v1
 ├── dp01_dc2_catalogs
@@ -44,6 +52,7 @@ The repository structure is the following:
 
 
 For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v1`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
+Note, for `dc2_object_run2_2i_dr6_wfd` also a DPDD-like schema is available under `dc2_object_run2_2i_dr6_wfd/dpdd`.
 
 We set the `v0` as the version used before qserv `2022-01-01.rc1` and `v1` the version used starting with qserv `2022-01-01.rc1`.
 
@@ -83,11 +92,6 @@ If one or more catalog's schema need to be update, the following procedure must 
 
 
 5. create a pull request to the main branch 
-
-
- 
-
-
 
 
 
