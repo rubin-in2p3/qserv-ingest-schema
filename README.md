@@ -52,6 +52,7 @@ The repository structure is the following:
 
 
 For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v1`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
+
 Note, for `dc2_object_run2_2i_dr6_wfd` also a DPDD-like schema is available under `dc2_object_run2_2i_dr6_wfd/dpdd`.
 
 We set the `v0` as the version used before qserv `2022-01-01.rc1` and `v1` the version used starting with qserv `2022-01-01.rc1`.
