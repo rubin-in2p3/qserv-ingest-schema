@@ -54,7 +54,7 @@ For each catalog, the CHANGELOG return also the compatibility between the schema
 | v0             | < 2022-01-01.rc1|            |
 | v1             | 2022-01-01.rc1  |            |
 
-## Use the schema
+## Use a schema
 
 To use the schema in this repository you must clone the repository (a version is available in `/sps/lsst/groups/qserv/dataloader/qserv-ingest-schema`):
 
@@ -65,7 +65,7 @@ git clone https://github.com/in2p3-dp0/qserv-ingest-schema.git
 and copy all the json schema files to the corresponding directory on `/sps/lsst/groups/qserv/dataloader/stable`.
 
 
-## Update schema
+## Update a schema
 
 If one or more catalog's schema need to be update, the following procedure must be followed: 
 
