@@ -1,6 +1,15 @@
 # Qserv ingest schema
 
 
+## Compatibility 
+
+| Schema Version | Qserv version | Replication Client version|  Notes     |
+|----------------|---------------|---------------------------|------------|
+| v0             | < 2022.1.1-rc1|     NA                    | Compatibility not clear/unknown |
+| v8             | 2022.1.1-rc1  |      8                    |            |
+
+## General informations
+
 This repository contains schema configuration related to the qserv database instance at CC-IN2P3.
 
 
@@ -28,41 +37,37 @@ The repository structure is the following:
 
 
 ```
+├── CHANGELOG.md
 ├── README.md
 ├── cosmoDC2_v1.1.4_image
-│   ├── CHANGELOG.md
-│   ├── v0
-│   └── v1
+│   ├── v0
+│   └── v8
 ├── dc2_dr6_object_v2
-│   └── v0
+│   └── v0
 ├── dc2_object_run2_2i_dr6_wfd
-│   ├── CHANGELOG.md
-│   ├── dpdd
-│   ├── v0
-│   └── v1
+│   ├── dpdd
+│   ├── v0
+│   └── v8
 ├── dp01_dc2_catalogs
-│   ├── CHANGELOG.md
-│   ├── v0
-│   └── v1
+│   ├── v0
+│   └── v8
 └── skysim5000_v1.1.1_parquet
-    ├── CHANGELOG.md
-    ├── v0
-    └── v1
+    └── v8
 ```
 
 
-For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v1`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
+For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v8`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
+Starting from Qserv version `2022.1.1-rc1`, the version number is the same of the `Replication Client version`, as shown in the [table](## Compatibility): 
+
+| Schema Version | Qserv version | Replication Client version|  Notes     |
+|----------------|---------------|---------------------------|------------|
+| v0             | < 2022.1.1-rc1|     NA                    | Compatibility not clear/unknown |
+| v8             | 2022.1.1-rc1  |      8                    |            |
+
+We set the `v0` as the version used before qserv `2022.1.1-rc1` because compatibility with replication client is not clear or unknown. 
 
 Note, for `dc2_object_run2_2i_dr6_wfd` also a DPDD-like schema is available under `dc2_object_run2_2i_dr6_wfd/dpdd`.
 
-We set the `v0` as the version used before qserv `2022-01-01.rc1` and `v1` the version used starting with qserv `2022-01-01.rc1`.
-
-For each catalog, the CHANGELOG return also the compatibility between the schema and qserv ingest, e.g. 
-
-| Schema Version | Qserv version   | Notes      |
-|----------------|-----------------|------------|
-| v0             | < 2022-01-01.rc1|            |
-| v1             | 2022-01-01.rc1  |            |
 
 ## Use a schema
 
@@ -79,20 +84,11 @@ and copy all the json schema files to the corresponding directory on `/sps/lsst/
 
 If one or more catalog's schema need to be update, the following procedure must be followed: 
 
-1. create a new branch from the main, e.g. `git checkout -b skysim_v2`
-2. create the corresponding directory, e.g. `mkdir skysim5000_v1.1.1_parquet/v2`
+1. create a new branch from the main, e.g. `git checkout -b skysim_v9`
+2. create the corresponding directory, e.g. `mkdir skysim5000_v1.1.1_parquet/v9`
 3. make the modification to the schema and commit/push it
-4. update the changelog  mentioning the changes and the compatibility with qserv ingest version, e.g. 
-
-
-| Schema Version | Qserv version | Notes      |
-|----------------|---------------|------------|
-| v0             | < 2022-01-01.rc1|          |
-| v1             | 2022-01-01.rc1|            |
-| v2             | 2022-04-01.rc1|            |
-
-
-5. create a pull request to the main branch 
+4. update the changelog  mentioning the changes and update the compayibility table in this README 
+5. create a pull request to the main branch.  
 
 
 
