@@ -57,7 +57,8 @@ The repository structure is the following:
 
 
 For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v8`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
-Starting from Qserv version `2022.1.1-rc1`, the version number is the same of the `Replication Client version`, as shown in the [table](## Compatibility): 
+
+Starting from Qserv version `2022.1.1-rc1`, the version number is the same of the `Replication Client version`, as shown in the [table](#-Compatibility): 
 
 | Schema Version | Qserv version | Replication Client version|  Notes     |
 |----------------|---------------|---------------------------|------------|
