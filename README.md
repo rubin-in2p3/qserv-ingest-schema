@@ -6,7 +6,7 @@
 | Schema Version | Qserv version | Replication Client version|  Notes     |
 |----------------|---------------|---------------------------|------------|
 | v0             | < 2022.1.1-rc1|     NA                    | Compatibility not clear/unknown |
-| v8             | 2022.1.1-rc1  |      8                    |            |
+| v8             | >= 2022.1.1-rc1  |      8                    |            |
 
 ## General informations
 
