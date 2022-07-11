@@ -13,13 +13,14 @@
 This repository contains schema configuration related to the qserv database instance at CC-IN2P3.
 
 
-There are 5 relevant catalogs available at CC-IN2P3 (under `/sps/lsst/groups/qserv/dataloader/stable`).
+There are 6 relevant catalogs available at CC-IN2P3 (under `/sps/lsst/groups/qserv/dataloader/stable`).
 
-Three have been ingested:
+Four have been ingested:
 
 - dp01_dc2_catalogs
 - skysim5000_v1.1.1_parquet
 - cosmoDC2_v1.1.4_image
+- idf-dp0.2-catalog-chunked2
 
 
 The two following catalogs have not been ingested:
@@ -39,19 +40,19 @@ The repository structure is the following:
 ```
 ├── CHANGELOG.md
 ├── cosmoDC2_v1.1.4_image
-│   ├── v0
-│   └── v8
+│   ├── v0
+│   └── v8
 ├── dc2_dr6_object_v2
-│   └── v0
+│   └── v0
 ├── dc2_object_run2_2i_dr6_wfd
-│   ├── dpdd
-│   ├── v0
-│   └── v8
+│   ├── dpdd
+│   ├── v0
+│   └── v8
 ├── dp01_dc2_catalogs
-│   ├── v0
-│   └── v8
+│   ├── v0
+│   └── v8
 ├── idf-dp0.2-catalog-chunked
-│   └── v8
+│   └── v8
 ├── README.md
 └── skysim5000_v1.1.1_parquet
     └── v8
