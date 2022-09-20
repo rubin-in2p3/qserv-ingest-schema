@@ -1,5 +1,10 @@
 {
     "database": "skysim5000_v1_1_1_parquet.json",
+    "formats": {
+        "txt": {
+            "fields_terminated_by": ","
+        }
+    },
     "tables": [{
             "schema": "position.json",
             "indexes": [
