@@ -7,7 +7,7 @@
 |----------------|---------------|---------------------------|------------|
 | v0             | < 2022.1.1-rc1|     NA                    | Compatibility not clear/unknown |
 | v8             | >= 2022.1.1-rc1  |      8                    |            |
-| v9             | >= 2022.9.1-rc1  |      9                    |            |
+| v9             | >= 2022.9.1-rc1  |      9                    |      Added format to set the separator      |
 
 ## General informations
 
@@ -40,23 +40,28 @@ The repository structure is the following:
 
 ```
 ├── CHANGELOG.md
+├── README.md
 ├── cosmoDC2_v1.1.4_image
 │   ├── v0
-│   └── v8
+│   ├── v8
+│   └── v9
 ├── dc2_dr6_object_v2
 │   └── v0
 ├── dc2_object_run2_2i_dr6_wfd
 │   ├── dpdd
 │   ├── v0
-│   └── v8
+│   ├── v8
+│   └── v9
 ├── dp01_dc2_catalogs
 │   ├── v0
-│   └── v8
+│   ├── v8
+│   └── v9
 ├── idf-dp0.2-catalog-chunked
-│   └── v8
-├── README.md
+│   ├── v8
+│   └── v9
 └── skysim5000_v1.1.1_parquet
-    └── v8
+    ├── v8
+    └── v9
 ```
 
 
