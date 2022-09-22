@@ -1,6 +1,5 @@
 # Qserv ingest schema
 
-
 ## Compatibility
 
 | Schema Version | Qserv version | Replication Client version|  Notes     |
@@ -13,7 +12,6 @@
 
 This repository contains schema configuration related to the qserv database instance at CC-IN2P3.
 
-
 There are 6 relevant catalogs available at CC-IN2P3 (under `/sps/lsst/groups/qserv/dataloader/stable`).
 
 Four have been ingested:
@@ -23,20 +21,16 @@ Four have been ingested:
 - cosmoDC2_v1.1.4_image
 - idf-dp0.2-catalog-chunked2
 
-
 The two following catalogs have not been ingested:
 
 - dc2_dr6_object_v2
 - dc2_object_run2_2i_dr6_wfd
 
-
 The schema configurations in this repository are covering the above catalogs.
-
 
 ## Repository structure
 
 The repository structure is the following:
-
 
 ```
 ├── CHANGELOG.md
@@ -64,16 +58,13 @@ The repository structure is the following:
     └── v9
 ```
 
-
 For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v8`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
 
 Starting from Qserv version `2022.1.1-rc1`, the version number is the same of the `Replication Client version`, as shown in the above [table](#Compatibility).
 
-
-We set the `v0` as the version used before qserv `2022.1.1-rc1` because compatibility with replication client is not clear or unknown.
+We set the `v0` as the version used before qserv `2022.1.1-rc1` because compatibility with replication client is either not clear or unknown.
 
 Note, for `dc2_object_run2_2i_dr6_wfd` also a DPDD-like schema is available under `dc2_object_run2_2i_dr6_wfd/dpdd`.
-
 
 ## Use a schema
 
@@ -85,7 +76,6 @@ git clone https://github.com/in2p3-dp0/qserv-ingest-schema.git
 
 and copy all the json schema files to the corresponding directory on `/sps/lsst/groups/qserv/dataloader/stable`.
 
-
 ## Update a schema
 
 If one or more catalog's schema need to be update, the following procedure must be followed:
@@ -95,6 +85,3 @@ If one or more catalog's schema need to be update, the following procedure must 
 3. make the modification to the schema and commit/push it
 4. update the changelog  mentioning the changes and update the compayibility table in this README
 5. create a pull request to the main branch.
-
-
-
