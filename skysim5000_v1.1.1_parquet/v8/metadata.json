@@ -1,13 +1,11 @@
 {
     "database": "skysim5000_v1_1_1_parquet.json",
-    "tables": [
-        {
+    "tables": [{
             "schema": "position.json",
             "indexes": [
                 "idx_position.json"
             ],
-            "data": [
-                {
+            "data": [{
                     "directory": "step1_1/position",
                     "chunks": [
                         61880,
@@ -83782,8 +83780,7 @@
             "indexes": [
                 "idx_data.json"
             ],
-            "data": [
-                {
+            "data": [{
                     "directory": "step2_1/data",
                     "chunks": [
                         61880,
