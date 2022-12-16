@@ -1,0 +1,28 @@
+{
+    "version":12,
+    "database": "dp02_dc2_catalogs",
+    "table": "MatchesTruth",
+    "is_partitioned": 1,
+    "director_table": "Object",
+    "director_key": "match_objectId",
+    "director_table2": "TruthSummary",
+    "director_key2": "id_truth_type",
+    "flag": "flag",
+    "ang_sep": 0.01,
+    "auth_key": "",
+    "schema": [
+        { "name": "index", "type": "BIGINT" },
+        { "name": "match_candidate", "type": "BOOLEAN" },
+        { "name": "match_row", "type": "BIGINT" },
+        { "name": "match_count", "type": "INT" },
+        { "name": "match_chisq", "type": "DOUBLE" },
+        { "name": "match_n_chisq_finite", "type": "INT" },
+        { "name": "id", "type": "CHAR(16)" },
+        { "name": "truth_type", "type": "TINYINT" },
+        { "name": "match_objectId", "type": "BIGINT" },
+        { "name": "id_truth_type", "type": "CHAR(18) NOT NULL" },
+        { "name": "chunkId", "type": "INT NOT NULL" },
+        { "name": "subChunkId", "type": "INT NOT NULL" },
+        { "name": "flag", "type": "TINYINT NOT NULL" }
+    ]
+}
