@@ -1,0 +1,15 @@
+{
+    "database": "dp02_dc2_catalogs",
+    "table": "MatchesTruth",
+    "index": "idx_id_truth_type",
+    "spec": "DEFAULT",
+    "comment": "The non-unique index on the FK to the table TruthSummary",
+    "columns": [
+        {
+            "column": "id_truth_type",
+            "length": 0,
+            "ascending": 1
+        }
+    ],
+    "auth_key":""
+}
