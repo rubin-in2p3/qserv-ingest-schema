@@ -1,5 +1,5 @@
 {
-    "version": 9,
+    "version": 12,
     "database": "dp02_dc2_catalogs",
     "table": "ForcedSourceOnDiaObject",
     "is_partitioned": 1,
