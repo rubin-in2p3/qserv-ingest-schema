@@ -1,4 +1,4 @@
-# Qserv ingest schema
+#Qserv ingest schema
 
 ## Compatibility
 
@@ -6,7 +6,8 @@
 |----------------|---------------|---------------------------|------------|
 | v0             | < 2022.1.1-rc1|     NA                    | Compatibility not clear/unknown |
 | v8             | >= 2022.1.1-rc1  |      8                    |            |
-| v9             | >= 2022.9.1-rc1  |      9                    |      Added format to set the separator      |
+| v9             | >= 2022.9.1-rc1   |      9                    |      Added format to set the separator      |
+| v12            | >= 2023.1.1-rc1  |      12                    |      Added version to metadata.json      |
 
 ## General informations
 
@@ -39,6 +40,7 @@ The repository structure is the following:
 │   ├── v0
 │   ├── v8
 │   └── v9
+│   └── v12
 ├── dc2_dr6_object_v2
 │   └── v0
 ├── dc2_object_run2_2i_dr6_wfd
@@ -46,16 +48,20 @@ The repository structure is the following:
 │   ├── v0
 │   ├── v8
 │   └── v9
+│   └── v12
 ├── dp01_dc2_catalogs
 │   ├── v0
 │   ├── v8
 │   └── v9
+│   └── v12
 ├── idf-dp0.2-catalog-chunked
 │   ├── v8
 │   └── v9
+│   └── v12
 └── skysim5000_v1.1.1_parquet
     ├── v8
     └── v9
+    └── v12
 ```
 
 For each catalog different version of the schema are available and identified by directory `v<x>` (e.g. `v0`, `v8`): this allow to unambiguously identify the schema and synchronise them with the qserv ingest release.
